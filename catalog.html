@@ -10,14 +10,12 @@
 				<img src="#" alt="Логотип">
 			</a>
 			<nav class="navigation">
-				<ul class="navigation-list">
+				<ul class="navigation-list header-nav">
 					<li class="navigation-item"><a href="index.html" class="navigation-link">Главная</a></li>
 					<li class="navigation-item"><a href="about.html" class="navigation-link">О Седоне</a></li>
 					<li class="navigation-item"><a href="catalog.html" class="navigation-link navigation-link-current">Гостиницы</a></li>
 				</ul>
-			</nav>
-			<nav class="navigation">
-				<ul class="navigation-list">
+				<ul class="navigation-list header-buttons">
 					<li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">Поиск</span></a></li>
 					<li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">Избранное</span><sup>12</sup></a></li>
 					<li class="navigation-item"><a href="#" class="navigation-link button">Хочу сюда!</a></li>
@@ -98,6 +96,9 @@
 								<input type="number" name="price-to" placeholder="до" value="9000">
 								<span class="visually-hidden">Цена до:</span>
 							</label>
+							<label class="control">
+								<input type="range" multiple min="0" step="1" max="9000">
+							</label>
 						</fieldset>
 
 						<button class="button" type="submit">Применить</button>
@@ -108,21 +109,9 @@
 
 
 		</main>
-
-		<footer class="page-footer">
-			<section class="newsletter">
-				<h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-				<p class="newsletter-description">
-					Только полезная информация и никакого спама, честное бойскаутское!
-				</p>
-				<form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-					<label for="newsletter-email">Email</label>
-					<input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-					<button class="button newsletter-button" type="submit">Подписаться</button>
-				</form>
-			</section>
-			<section class="social">
-				<h2 class="visually-hidden">Социальные сети</h2>
+		<footer class="footer">
+			<section class="contacts">
+				<h2 class="visually-hidden">Контакты</h2>
 				<ul class="social-list">
 					<li class="social-item">
 						<a class="social-link" href="https://vk.com/htmlacademy">
@@ -140,13 +129,7 @@
 						</a>
 					</li>
 				</ul>
-			</section>
-			<section class="tel">
-				<h2 class="visually-hidden">Наш телефон:</h2>
-				<a href="tel:88128121212">+7 (812) 812-12-12</a>
-			</section>
-			<section class="develop">
-				<h2 class="visually-hidden">Сделано в .html academy</h2>
+				<a class="footer-tel" href="tel:88128121212" aria-label="Наш телефон для связи">+7 (812) 812-12-12</a>
 				<a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="#" alt="Логотип html academy"></a>
 			</section>
 		</footer>
