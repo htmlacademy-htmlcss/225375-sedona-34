@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>
+    <title>Седона: Каталог гостиниц</title>
   </head>
   <body>
 		<header class="page-header">
@@ -106,8 +106,120 @@
 					</form>
 				</section>
       </header>
-
-
+			<section class="catalog">
+				<h2 class="visually-hidden">Список выбранных гостиниц</h2>
+				<b class="title">Найдено гостиниц: <span>38</span></b>
+				<select class="catalog-view-sort" name="catalog-sort">
+					<option selected value="cheap">Сначала дешевые</option>
+					<option value="rich">Сначала дорогие</option>
+					<option value="review">По популярности</option>
+				</select>
+				<div class="catalog-view-buttons">
+					<a href="#" class="button button-short"><span class="visually-hidden">Отображать блоками</span></a>
+					<a href="#" class="button button-short"><span class="visually-hidden">Отображать блоками с описанием</span></a>
+					<a href="#" class="button button-short"><span class="visually-hidden">Отображать списком</span></a>
+				</div>
+				<ul class="catalog-list">
+					<li class="catalog-item">
+						<img class="catalog-item-img" src="#" alt="Фотография гостиницы Amara Resort & Spa">
+						<b class="catalog-item-title">Amara Resort & Spa</b>
+						<span class="catalog-item-type">Гостиница</span>
+						<span class="catalog-item-price">От 4000 ₽</span>
+						<a class="button" href="#">Подробнее</a>
+						<button class="button" type="button">В избранное</button>
+						<ul class="num-stars">
+							<li class="star"></li>
+							<li class="star"></li>
+							<li class="star"></li>
+							<li class="star"></li>
+						</ul>
+						<p class="catalog-item-rating">Рейтинг: 8,5</p>
+					</li>
+					<li class="catalog-item">
+						<img class="catalog-item-img" src="#" alt="Фотография гостиницы Villas at Poco Diablo">
+						<b class="catalog-item-title">Villas at Poco Diablo</b>
+						<span class="catalog-item-type">Гостиница</span>
+						<span class="catalog-item-price">От 5000 ₽</span>
+						<a class="button" href="#">Подробнее</a>
+						<button class="button" type="button">В избранном</button>
+						<ul class="num-stars">
+							<li class="star"></li>
+							<li class="star"></li>
+							<li class="star"></li>
+							<li class="star"></li>
+						</ul>
+						<p class="catalog-item-rating">Рейтинг: 9,2</p>
+					</li>
+					<li class="catalog-item">
+						<img class="catalog-item-img" src="#" alt="Фотография гостиницы Desert Quail Inn">
+						<b class="catalog-item-title">Desert Quail Inn</b>
+						<span class="catalog-item-type">Гостиница</span>
+						<span class="catalog-item-price">От 2500 ₽</span>
+						<a class="button" href="#">Подробнее</a>
+						<button class="button" type="button">В избранное</button>
+						<ul class="num-stars">
+							<li class="star"></li>
+							<li class="star"></li>
+							<li class="star"></li>
+						</ul>
+						<p class="catalog-item-rating">Рейтинг: 6,9</p>
+					</li>
+					<li class="catalog-item">
+						<img class="catalog-item-img" src="#" alt="Фотография гостиницы GreenTree Inn">
+						<b class="catalog-item-title">GreenTree Inn</b>
+						<span class="catalog-item-type">Гостиница</span>
+						<span class="catalog-item-price">От 1500 ₽</span>
+						<a class="button" href="#">Подробнее</a>
+						<button class="button" type="button">В избранное</button>
+						<ul class="num-stars">
+							<li class="star"></li>
+							<li class="star"></li>
+						</ul>
+						<p class="catalog-item-rating">Рейтинг: 5,0</p>
+					</li>
+				</ul>
+				<ul class="catalog-paginator">
+					<li class="paginator-item">
+						<a class="paginator-link" href="#">1</a>
+					</li>
+					<li class="paginator-item">
+						<a class="paginator-link" href="#">2</a>
+					</li>
+					<li class="paginator-item">
+						<a class="paginator-link" href="#">3</a>
+					</li>
+					<li class="paginator-item">
+						<a class="paginator-link" href="#">4</a>
+					</li>
+					<li class="paginator-item">
+						<a class="paginator-link" href="#">...</a>
+					</li>
+					<li class="paginator-item">
+						<a class="paginator-link" href="#">10</a>
+					</li>
+				</ul>
+				<label class="catalog-view-items">
+					Гостиниц на странице:
+					<select class="catalog-num-items" name="catalog-num-items">
+						<option selected value="4">4</option>
+						<option value="8">8</option>
+						<option value="12">12</option>
+						<option value="16">16</option>
+						<option value="20">20</option>
+					</select>
+				</label>
+			</section>
+			<section class="newsletter">
+				<h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+				<p class="newsletter-description">
+					Только полезная информация и никакого спама, честное бойскаутское!
+				</p>
+				<form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+					<label for="newsletter-email">Email</label>
+					<input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+					<button class="button newsletter-button" type="submit">Подписаться</button>
+				</form>
+			</section>
 		</main>
 		<footer class="footer">
 			<section class="contacts">
