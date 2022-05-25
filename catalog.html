@@ -13,7 +13,7 @@
 				<ul class="navigation-list header-nav">
 					<li class="navigation-item"><a href="index.html" class="navigation-link">Главная</a></li>
 					<li class="navigation-item"><a href="about.html" class="navigation-link">О Седоне</a></li>
-					<li class="navigation-item"><a href="#" class="navigation-link navigation-link-current">Гостиницы</a></li>
+					<li class="navigation-item"><a class="navigation-link navigation-link-current">Гостиницы</a></li>
 				</ul>
 				<ul class="navigation-list header-buttons">
 					<li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">Поиск</span></a></li>
@@ -36,8 +36,6 @@
 				<section class="filters">
 					<h2 class="visually-hidden">Фильтр для поиска гостиницы</h2>
 					<form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
-
-
 						<fieldset class="catalog-filter-group">
 							<legend class="catalog-filter-title">Инфраструктура:</legend>
 							<ul class="catalog-filter-list">
@@ -102,14 +100,14 @@
 						</fieldset>
 
 						<button class="button" type="submit">Применить</button>
-						<button class="button button-trasparent" type="button">Сбросить</button>
+						<button class="button button-trasparent" type="reset">Сбросить</button>
 					</form>
 				</section>
       </header>
 			<section class="catalog">
 				<h2 class="visually-hidden">Список выбранных гостиниц</h2>
 				<b class="title">Найдено гостиниц: <span>38</span></b>
-				<select class="catalog-view-sort" name="catalog-sort">
+				<select class="catalog-view-sort" name="catalog-sort" aria-label="Выбор сортировки гостиниц">
 					<option selected value="cheap">Сначала дешевые</option>
 					<option value="rich">Сначала дорогие</option>
 					<option value="review">По популярности</option>
@@ -180,7 +178,7 @@
 				</ul>
 				<ul class="catalog-paginator">
 					<li class="paginator-item">
-						<a class="paginator-link" href="#">1</a>
+						<a class="paginator-link paginator-link-current">1</a>
 					</li>
 					<li class="paginator-item">
 						<a class="paginator-link" href="#">2</a>
@@ -200,7 +198,7 @@
 				</ul>
 				<label class="catalog-view-items">
 					Гостиниц на странице:
-					<select class="catalog-num-items" name="catalog-num-items">
+					<select class="catalog-num-items" name="catalog-num-items" aria-label="Количество отображаемых гостиниц на странице">
 						<option selected value="4">4</option>
 						<option value="8">8</option>
 						<option value="12">12</option>
@@ -215,7 +213,7 @@
 					Только полезная информация и никакого спама, честное бойскаутское!
 				</p>
 				<form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-					<label for="newsletter-email">Email</label>
+					<label for="newsletter-email" class="visually-hidden">Email</label>
 					<input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
 					<button class="button newsletter-button" type="submit">Подписаться</button>
 				</form>
