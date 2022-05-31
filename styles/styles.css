@@ -14,3 +14,92 @@
 	font-display: swap;
 }
 
+body {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 21px;
+	color: #333333;
+}
+
+.title {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.title-reason {
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.title-catalog {
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.catalog-header-title {
+	font-size: 60px;
+	line-height: 78px;
+	color: #ffffff;
+}
+
+.title-filter {
+	font-size: 20px;
+	line-height: 26px;
+	text-transform: capitalize;
+	color: #ffffff;
+}
+
+.description {
+	font-size: 22px;
+	line-height: 26px;
+}
+
+.navigation-link {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #000000;
+}
+
+.footer-tel {
+	font-size: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.text-centered {
+	text-align: center;
+}
+
+/* Стиль просто чтоб скрыть visually-hidden для себя */
+
+.visually-hidden {
+	display: none;
+}
+
+
+.button {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+}
+
+.button-large {
+	font-size: 20px;
+	line-height: 36px;
+}
+
+.welcome {
+	background: url("../images/backgrounds/welcome.jpg") no-repeat;
+	background-color: #dceaf3;
+}
