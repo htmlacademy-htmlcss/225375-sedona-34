@@ -120,6 +120,11 @@ body {
 	background-color: transparent;
 }
 
+.pagination-link-current {
+	color: #000000;
+	background-color: #F2F2F2;
+}
+
 .welcome {
 	background: url("../images/backgrounds/welcome.jpg") no-repeat;
 	background-size: 100% auto;
