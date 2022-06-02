@@ -1,3 +1,5 @@
+/* Подключение шрифтов */
+
 @font-face {
 	font-family: "PT Sans";
 	font-style: normal;
@@ -14,11 +16,18 @@
 	font-display: swap;
 }
 
+/* Основные/повторяющиеся стили */
+
 body {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 21px;
 	color: #333333;
+	margin: 0;
+}
+
+.main-index {
+	text-align: center;
 }
 
 .title {
@@ -29,68 +38,10 @@ body {
 	color: #000000;
 }
 
-.title-reason {
-	font-size: 24px;
-	line-height: 28px;
-	text-align: center;
-}
-
-.catalog-item-title {
-	font-size: 24px;
-	line-height: 28px;
-	font-weight: 700;
-	color: #000000;
-}
-
-.catalog-header-title {
-	font-size: 60px;
-	line-height: 78px;
-	color: #ffffff;
-}
-
-.title-filter {
-	font-size: 20px;
-	line-height: 26px;
-	text-transform: capitalize;
-	color: #ffffff;
-}
-
 .description {
 	font-size: 22px;
 	line-height: 26px;
 }
-
-.navigation-link {
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 26px;
-	text-transform: capitalize;
-	text-decoration: none;
-	color: #000000;
-}
-
-.breadcrumbs {
-	font-size: 16px;
-}
-
-.catalog-item-rating {
-	font-size: 16px;
-	line-height: 20px;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-.footer-tel {
-	font-size: 40px;
-	line-height: 40px;
-	text-transform: uppercase;
-	color: #000000;
-}
-
-.text-centered {
-	text-align: center;
-}
-
 
 .button {
 	font-size: 16px;
@@ -101,6 +52,14 @@ body {
 	text-align: center;
 	color: #ffffff;
 	background-color: #756157;
+	border: none;
+}
+
+/* Дополнительная стилизация */
+
+.button-large {
+	font-size: 20px;
+	line-height: 36px;
 }
 
 .button-accent {
@@ -111,38 +70,92 @@ body {
 	background-color: #7DB54F;
 }
 
-.button-large {
-	font-size: 20px;
-	line-height: 36px;
-}
-
 .button-trasparent {
 	background-color: transparent;
+	text-transform: none;
+	font-weight: 400;
 }
 
-.pagination-link-current {
+
+/* Главное меню */
+
+.navigation-link {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	text-transform: capitalize;
+	text-decoration: none;
 	color: #000000;
-	background-color: #F2F2F2;
 }
+
+/*
+	Вопрос:
+	Здесь пришлось повторять свойства кнопки, так как .navigation-link их переопределил.
+	По сути лишний код, который возник в ходе распределения селекторов внутри файла styles.css
+	Данное решение правильное, или лучше "наплевать" на расположение селекторов
+	и тем самым уменьшить кол-во строк кода, или есть более изящное решение?
+*/
+
+.navigation-link.button {
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+
+/* Контакты */
+
+.telephone {
+	font-size: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+
+/* Index.html */
+/* Приветствие */
 
 .welcome {
-	background: url("../images/backgrounds/welcome.jpg") no-repeat;
+	background: #82B3D3 url("../images/backgrounds/welcome.jpg") no-repeat;
 	background-size: 100% auto;
+	color: #ffffff;
+}
+
+/* Стили карточек причин */
+
+.main-card {
 	background-color: #82B3D3;
 	color: #ffffff;
 }
 
-.catalog-header {
-	background: url("../images/backgrounds/filter.jpg") no-repeat;
-	background-size: 100% auto;
-	background-color: #82B3D3;
+.title-reason {
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.main-card .title-reason {
 	color: #ffffff;
 }
+
+.reason-sublist > .card-reason:first-child,
+.reason-sublist > .card-reason:last-child,
+.reason-list > .card-reason:nth-child(3),
+.reason-list > .card-reason:nth-child(5) {
+	background-color: rgba(131, 179, 211, 0.12);;
+}
+
+.reason-list > .card-reason:nth-child(4) {
+	background-color: rgba(131, 179, 211, 0.2);;
+}
+
+/* Подписка */
 
 .newsletter-background {
-	background: url("../images/backgrounds/newsletter.jpg") no-repeat;
+	background: #82B3D3 url("../images/backgrounds/newsletter.jpg") no-repeat;
 	background-size: 100% auto;
-	background-color: #82B3D3;
 	color: #ffffff;
 }
 
@@ -150,22 +163,76 @@ body {
 	color: #ffffff;
 }
 
-ol.reason-list .reason-card-description {
-	background-color: #82B3D3;
+
+
+/* Catalog.html */
+/* Шапка каталога */
+
+.header-catalog {
+	background: #82B3D3 url("../images/backgrounds/filter.jpg") no-repeat;
+	background-size: 100% auto;
 	color: #ffffff;
 }
 
-ol.reason-list .reason-card-description .title {
+.catalog-main-title {
+	font-size: 60px;
+	line-height: 78px;
+}
+
+/* Хлебные крошки */
+
+.breadcrumbs {
+	font-size: 16px;
+}
+
+.breadcrumbs-link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+/* Фильтры */
+
+.title-filter {
+	font-size: 20px;
+	line-height: 26px;
+	text-transform: capitalize;
 	color: #ffffff;
 }
 
-ol.reason-list > li:nth-child(3),
-ol.reason-list > li:nth-child(5),
-ul.reason-list > li:first-child,
-ul.reason-list > li:last-child {
-	background-color: rgba(131, 179, 211, 0.12);;
+
+/* Каталог */
+
+.button-icon {
+	background-color: transparent;
+	color: #000000;
+	border: 2px solid #e5e5e5;
 }
 
-ol.reason-list > li:nth-child(4) {
-	background-color: rgba(131, 179, 211, 0.2);;
+.button-icon-selected {
+	border: 2px solid #000000;
+}
+
+.hotel-title {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.hotel-link {
+	text-decoration: none;
+}
+
+.hotel-rating {
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #F2F2F2;
+}
+
+.pagination-link-current {
+	color: #000000;
+	background-color: #F2F2F2;
 }
