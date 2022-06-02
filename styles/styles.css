@@ -55,6 +55,11 @@ body {
 	border: none;
 }
 
+.text-input {
+	font-size: inherit;
+	line-height: inherit;
+}
+
 /* Дополнительная стилизация */
 
 .button-large {
@@ -97,6 +102,8 @@ body {
 */
 
 .navigation-link.button {
+	font-size: 16px;
+	line-height: 20px;
 	color: #ffffff;
 	text-transform: uppercase;
 }
@@ -133,7 +140,6 @@ body {
 .title-reason {
 	font-size: 24px;
 	line-height: 28px;
-	text-align: center;
 }
 
 .main-card .title-reason {
