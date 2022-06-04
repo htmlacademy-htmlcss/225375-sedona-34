@@ -93,21 +93,6 @@ body {
 	color: #000000;
 }
 
-/*
-	Вопрос:
-	Здесь пришлось повторять свойства кнопки, так как .navigation-link их переопределил.
-	По сути лишний код, который возник в ходе распределения селекторов внутри файла styles.css
-	Данное решение правильное, или лучше "наплевать" на расположение селекторов
-	и тем самым уменьшить кол-во строк кода, или есть более изящное решение?
-*/
-
-.navigation-link.button {
-	font-size: 16px;
-	line-height: 20px;
-	color: #ffffff;
-	text-transform: uppercase;
-}
-
 
 /* Контакты */
 
@@ -125,7 +110,9 @@ body {
 /* Приветствие */
 
 .welcome {
-	background: #82B3D3 url("../images/backgrounds/welcome.jpg") no-repeat;
+	background-color: #82B3D3 ;
+	background-image: url("../images/backgrounds/welcome.jpg");
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	color: #ffffff;
 }
@@ -150,17 +137,19 @@ body {
 .reason-sublist > .card-reason:last-child,
 .reason-list > .card-reason:nth-child(3),
 .reason-list > .card-reason:nth-child(5) {
-	background-color: rgba(131, 179, 211, 0.12);;
+	background-color: rgba(131, 179, 211, 0.12);
 }
 
 .reason-list > .card-reason:nth-child(4) {
-	background-color: rgba(131, 179, 211, 0.2);;
+	background-color: rgba(131, 179, 211, 0.2);
 }
 
 /* Подписка */
 
 .newsletter-background {
-	background: #82B3D3 url("../images/backgrounds/newsletter.jpg") no-repeat;
+	background-color: #82B3D3 ;
+	background-image: url("../images/backgrounds/newsletter.jpg");
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	color: #ffffff;
 }
@@ -175,7 +164,9 @@ body {
 /* Шапка каталога */
 
 .header-catalog {
-	background: #82B3D3 url("../images/backgrounds/filter.jpg") no-repeat;
+	background-color: #82B3D3 ;
+	background-image: url("../images/backgrounds/filter.jpg");
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	color: #ffffff;
 }
