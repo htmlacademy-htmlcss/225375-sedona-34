@@ -3,144 +3,182 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+		<link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+		<link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
-		<header class="page-header">
+
+		<!-- Шапка: Навигация -->
+		<header class="header-navigation">
 			<a class="logo">
-				<img src="images/logo.svg" width="139" height="70" alt="Логотип">
+				<img src="images/logo.svg" width="139" height="70" alt="Логотип.">
 			</a>
 			<nav class="navigation">
-				<ul class="navigation-list header-nav">
-					<li class="navigation-item"><a class="navigation-link navigation-link-current">Главная</a></li>
-					<li class="navigation-item"><a href="#" class="navigation-link">О Седоне</a></li>
-					<li class="navigation-item"><a href="catalog.html" class="navigation-link">Гостиницы</a></li>
+				<ul class="navigation-list">
+					<li class="navigation-item">
+						<a class="navigation-link navigation-link-current">Главная</a>
+					</li>
+					<li class="navigation-item">
+						<a class="navigation-link" href="#">О Седоне</a>
+					</li>
+					<li class="navigation-item">
+						<a class="navigation-link" href="catalog.html">Гостиницы</a>
+					</li>
 				</ul>
-				<ul class="navigation-list header-buttons">
-					<li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">Поиск</span></a></li>
-					<li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">Избранное</span><sup>12</sup></a></li>
-					<li class="navigation-item"><a href="#" class="navigation-link button">Хочу сюда!</a></li>
+				<ul class="navigation-list">
+					<li class="navigation-item">
+						<a class="navigation-link" href="#">
+							<span class="visually-hidden">Поиск</span>
+						</a>
+					</li>
+					<li class="navigation-item">
+						<a class="navigation-link" href="#">
+							<span class="visually-hidden">Избранное</span>
+							<sup>12</sup>
+						</a>
+					</li>
+					<li class="navigation-item">
+						<a class="button" href="#">Хочу сюда!</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
+
 		<main class="main-index">
+
+			<!-- Добро пожаловать! -->
 			<section class="welcome">
 				<h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-				<img class="welcome-image" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону">
+				<img class="image-welcome" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону.">
 			</section>
+
+			<!-- Причины посетить Седону -->
 			<section class="reasons">
 				<h2 class="visually-hidden">Причины посетить Седону</h2>
-				<p class="welcome-description">
+				<p class="title title-welcome">
 					Седона — небольшой городок в Аризоне, заслуживающий большего!
 				</p>
-				<p class="reasons-intro">
+				<p class="description description-reasons">
 					Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
 				</p>
+
+				<!-- Список причин -->
 				<ol class="reason-list">
-					<li class="reason-card">
-						<div class="reason-card-description">
-							<h3 class="reason-title">Настоящий городок</h3>
-							<span class="reason-position">— №1 —</span>
-							<p class="reason-description">
+					<li class="card-reason">
+						<div class="main-card">
+							<h3 class="title title-reason">Настоящий городок</h3>
+							<span class="reason-num">— №1 —</span>
+							<p class="description-reason">
 								Седона — не аттракцион для туристов, там течёт своя жизнь
 							</p>
 						</div>
-						<img class="reason-image" src="images/first-reason.jpg" width="800" height="384" alt="Живописный пейзаж городка">
-						<ul class="reason-list">
-							<li class="reason-card">
-								<h3 class="reason-title">Жильё</h3>
-								<p class="reason-description">
+						<img class="main-card-image" src="images/first-reason.jpg" width="800" height="384" alt="Живописный пейзаж городка.">
+
+						<!-- Подсписок причин -->
+						<ul class="reason-sublist">
+							<li class="card-reason">
+								<h3 class="title title-reason">Жильё</h3>
+								<p class="description-reason">
 									Рекомендуем пожить в настоящем мотеле, всё как в кино!
 								</p>
 							</li>
-							<li class="reason-card">
-								<h3 class="reason-title">Еда</h3>
-								<p class="reason-description">
+							<li class="card-reason">
+								<h3 class="title title-reason">Еда</h3>
+								<p class="description-reason">
 									Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
 								</p>
 							</li>
-							<li class="reason-card">
-								<h3 class="reason-title">Сувениры</h3>
-								<p class="reason-description">
+							<li class="card-reason">
+								<h3 class="title title-reason">Сувениры</h3>
+								<p class="description-reason">
 									Не только китайского, но и настоящего местного производства!
 								</p>
 							</li>
 						</ul>
+
 					</li>
-					<li class="reason-card">
-						<img class="reason-image" src="images/second-reason.jpg" width="800" height="384" alt="Мост дьявола - страшно красиво">
-						<div class="reason-card-description">
-							<h3 class="reason-title">Там есть мост дьявола</h3>
-							<span class="reason-position">— №2 —</span>
-							<p class="reason-description">
+					<li class="card-reason">
+						<img class="main-card-image" src="images/second-reason.jpg" width="800" height="384" alt="Мост дьявола - завораживающее место.">
+						<div class="main-card">
+							<h3 class="title title-reason">Там есть мост дьявола</h3>
+							<span class="reason-num">— №2 —</span>
+							<p class="description-reason">
 								Да, по нему можно пройти! Если вы осмелитесь, разумеется
 							</p>
 						</div>
 					</li>
-					<li class="reason-card">
-						<h3 class="reason-title">Небольшая площадь</h3>
-						<span class="reason-position">— №3 —</span>
-						<p class="reason-description">
+					<li class="card-reason">
+						<h3 class="title title-reason">Небольшая площадь</h3>
+						<span class="reason-num">— №3 —</span>
+						<p class="description-reason">
 							Все достопримечательности находятся очень близко
 						</p>
 					</li>
-					<li class="reason-card">
-						<h3 class="reason-title">Красивая дорога</h3>
-						<span class="reason-position">— №4 —</span>
-						<p class="reason-description">
+					<li class="card-reason">
+						<h3 class="title title-reason">Красивая дорога</h3>
+						<span class="reason-num">— №4 —</span>
+						<p class="description-reason">
 							Ехать в Седону из Лас-Вегаса совсем не скучно!
 						</p>
 					</li>
-					<li class="reason-card">
-						<h3 class="reason-title">Мало туристов</h3>
-						<span class="reason-position">— №5 —</span>
-						<p class="reason-description">
+					<li class="card-reason">
+						<h3 class="title title-reason">Мало туристов</h3>
+						<span class="reason-num">— №5 —</span>
+						<p class="description-reason">
 							Большинство едет в Гранд Каньон и толпится там
 						</p>
 					</li>
 				</ol>
 			</section>
-			<section class="invite">
+
+			<!-- Бронирование -->
+			<section class="reservation">
 				<h2 class="visually-hidden">Поиск и бронирование гостиницы</h2>
-				<h3 class="invite-title">Заинтересовались?</h3>
-				<p class="invite-description">
+				<h3 class="title title-reservation">Заинтересовались?</h3>
+				<p class="description description-reservation">
 					Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
 				</p>
-				<a href="#" class="invite-button button">Поиск гостиницы в Седоне</a>
+				<a class="button button-large" href="#">Поиск гостиницы в Седоне</a>
 			</section>
+
+			<!-- Рассылка -->
 			<section class="newsletter newsletter-background">
-				<h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-				<p class="newsletter-description">
+				<h2 class="title title-newsletter">Подпишитесь на рассылку</h2>
+				<p class="description description-newsletter">
 					Только полезная информация и никакого спама, честное бойскаутское!
 				</p>
-				<form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+				<form class="form-newsletter" action="https://echo.htmlacademy.ru/" method="post">
 					<label class="visually-hidden" for="newsletter-email">Email</label>
-					<input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-					<button class="button newsletter-button" type="submit">Подписаться</button>
+					<input class="text-input" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+					<button class="button button-large button-accent button-newsletter" type="submit">Подписаться</button>
 				</form>
 			</section>
 		</main>
+
+		<!-- Подвал: Контакты -->
 		<footer class="contacts">
 			<h2 class="visually-hidden">Контакты</h2>
 			<ul class="social-list">
 				<li class="social-item">
 					<a class="social-link" href="https://vk.com/htmlacademy">
-						<span class="visually-hidden">VK</span>
+						<img class="social-icon" src="images/icons/social/vk.svg" width="24" height="14" alt="Вконтакте.">
 					</a>
 				</li>
 				<li class="social-item">
 					<a class="social-link" href="https://t.me/htmlacademy">
-						<span class="visually-hidden">Telegram</span>
+						<img class="social-icon" src="images/icons/social/tg.svg" width="18" height="16" alt="Телеграм.">
 					</a>
 				</li>
 				<li class="social-item">
 					<a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-						<span class="visually-hidden">YouTube</span>
+						<img class="social-icon" src="images/icons/social/yt.svg" width="22" height="17" alt="YouTube.">
 					</a>
 				</li>
 			</ul>
-			<a class="footer-tel" href="tel:88128121212" aria-label="Наш телефон для связи">+7 (812) 812-12-12</a>
-			<a class="htmlacademy-link" href="https://htmlacademy.ru/">
-				<img src="images/dev-logo.svg"  width="115" height="34" alt="Логотип html academy">
+			<a class="telephone" href="tel:88128121212" aria-label="Наш телефон для связи:">+7 (812) 812-12-12</a>
+			<a class="dev-link" href="https://htmlacademy.ru/">
+				<img src="images/dev-logo.svg"  width="115" height="34" alt="Логотип компании html academy.">
 			</a>
 		</footer>
   </body>

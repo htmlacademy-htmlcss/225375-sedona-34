@@ -1,0 +1,235 @@
+/* Подключение шрифтов */
+
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/ptsans-400.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/ptsans-700.woff2") format("woff2");
+	font-display: swap;
+}
+
+/* Основные/повторяющиеся стили */
+
+body {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 21px;
+	color: #333333;
+	margin: 0;
+}
+
+.main-index {
+	text-align: center;
+}
+
+.title {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.description {
+	font-size: 22px;
+	line-height: 26px;
+}
+
+.button {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	background-color: #756157;
+	border: none;
+}
+
+.text-input {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+/* Дополнительная стилизация */
+
+.button-large {
+	font-size: 20px;
+	line-height: 36px;
+}
+
+.button-accent {
+	background-color: #82B3D3;
+}
+
+.button-selected {
+	background-color: #7DB54F;
+}
+
+.button-trasparent {
+	background-color: transparent;
+	text-transform: none;
+	font-weight: 400;
+}
+
+
+/* Главное меню */
+
+.navigation-link {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+/* Контакты */
+
+.telephone {
+	font-size: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+
+/* Index.html */
+/* Приветствие */
+
+.welcome {
+	background-color: #82B3D3 ;
+	background-image: url("../images/backgrounds/welcome.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	color: #ffffff;
+}
+
+/* Стили карточек причин */
+
+.main-card {
+	background-color: #82B3D3;
+	color: #ffffff;
+}
+
+.title-reason {
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.main-card .title-reason {
+	color: #ffffff;
+}
+
+.reason-sublist > .card-reason:first-child,
+.reason-sublist > .card-reason:last-child,
+.reason-list > .card-reason:nth-child(3),
+.reason-list > .card-reason:nth-child(5) {
+	background-color: rgba(131, 179, 211, 0.12);
+}
+
+.reason-list > .card-reason:nth-child(4) {
+	background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* Подписка */
+
+.newsletter-background {
+	background-color: #82B3D3 ;
+	background-image: url("../images/backgrounds/newsletter.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	color: #ffffff;
+}
+
+.newsletter-background .title {
+	color: #ffffff;
+}
+
+
+
+/* Catalog.html */
+/* Шапка каталога */
+
+.header-catalog {
+	background-color: #82B3D3 ;
+	background-image: url("../images/backgrounds/filter.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	color: #ffffff;
+}
+
+.catalog-main-title {
+	font-size: 60px;
+	line-height: 78px;
+}
+
+/* Хлебные крошки */
+
+.breadcrumbs {
+	font-size: 16px;
+}
+
+.breadcrumbs-link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+/* Фильтры */
+
+.title-filter {
+	font-size: 20px;
+	line-height: 26px;
+	text-transform: capitalize;
+	color: #ffffff;
+}
+
+
+/* Каталог */
+
+.button-icon {
+	background-color: transparent;
+	color: #000000;
+	border: 2px solid #e5e5e5;
+}
+
+.button-icon-selected {
+	border: 2px solid #000000;
+}
+
+.hotel-title {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.hotel-link {
+	text-decoration: none;
+}
+
+.hotel-rating {
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #F2F2F2;
+}
+
+.pagination-link-current {
+	color: #000000;
+	background-color: #F2F2F2;
+}
