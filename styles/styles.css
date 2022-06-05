@@ -23,7 +23,8 @@ html {
 }
 
 body {
-	margin: 0;
+	width: 1200px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
@@ -35,7 +36,6 @@ body {
 
 .main-index {
 	flex-grow: 1;
-	text-align: center;
 }
 
 .title {
@@ -68,6 +68,10 @@ body {
 	line-height: inherit;
 }
 
+.visually-hidden {
+	display: none;
+}
+
 /* Дополнительная стилизация */
 
 .button-large {
@@ -91,6 +95,27 @@ body {
 
 
 /* Главное меню */
+
+.header-navigation {
+	padding: 0 70px;
+	display: flex;
+}
+
+.logo {
+	width: 140px;
+}
+
+.navigation {
+	width: 890px;
+	display: flex;
+	margin-left: 30px;
+	justify-content: space-between;
+}
+
+.navigation-list {
+	margin: 0;
+	padding: 0;
+}
 
 .navigation-link {
 	font-weight: 700;
@@ -125,9 +150,47 @@ body {
 	color: #ffffff;
 }
 
+.image-welcome {
+	display: block;
+	margin: 0 auto;
+}
+
+.title-welcome {
+	width: 620px;
+	margin: auto;
+}
+
+.description-reasons {
+	width: 660px;
+	margin: auto;
+}
+
 /* Стили карточек причин */
 
+.reason-list,
+.reason-sublist {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card-reason,
+.main-card-description {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+
+}
+
 .main-card {
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.main-card-description {
 	background-color: #82B3D3;
 	color: #ffffff;
 }
@@ -137,18 +200,22 @@ body {
 	line-height: 28px;
 }
 
-.main-card .title-reason {
+.title-reason,
+.reason-num,
+.description-reason {
+	width: 230px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.main-card-description .title-reason {
 	color: #ffffff;
 }
 
-.reason-sublist > .card-reason:first-child,
-.reason-sublist > .card-reason:last-child,
-.reason-list > .card-reason:nth-child(3),
-.reason-list > .card-reason:nth-child(5) {
+.background-reason-lighter {
 	background-color: rgba(131, 179, 211, 0.12);
 }
-
-.reason-list > .card-reason:nth-child(4) {
+.background-reason-light {
 	background-color: rgba(131, 179, 211, 0.2);
 }
 
