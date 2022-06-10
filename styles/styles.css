@@ -36,7 +36,7 @@ body {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 21px;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 	background-color: #ffffff;
 	color: #333333;
 }
