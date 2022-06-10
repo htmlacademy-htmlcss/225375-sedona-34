@@ -80,6 +80,7 @@ img {
 	background-color: #756157;
 	border: none;
 	border-radius: 4px;
+	display: block;
 }
 
 .text-input,
@@ -124,6 +125,7 @@ img {
 /* Navigation */
 
 .header-navigation {
+	height: 66px;
 	padding: 0 70px;
 	display: flex;
 	justify-content: space-between;
@@ -131,6 +133,7 @@ img {
 
 .logo {
 	width: 140px;
+	z-index: 1;
 }
 
 .navigation {
@@ -148,10 +151,11 @@ img {
 }
 
 .navigation-item {
+	display: block;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 26px;
-	padding: 0 17px;
+	padding: 20px 17px;
 	text-transform: capitalize;
 	text-decoration: none;
 	color: #000000;
