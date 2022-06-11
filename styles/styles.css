@@ -77,6 +77,7 @@ img {
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
+	cursor: pointer;
 	color: #ffffff;
 	background-color: #756157;
 	border: none;
@@ -168,11 +169,11 @@ img {
 	text-align: center;
 }
 
-.newsletter > .title {
+.newsletter .title {
 	margin-bottom: 29px;
 }
 
-.newsletter > .description {
+.newsletter .description {
 	width: 475px;
 	margin: 0;
 	margin-bottom: 46px;
@@ -241,6 +242,7 @@ img {
 
 .welcome {
 	margin: 0;
+	margin-bottom: 63px;
 	padding: 50px 0 82px;
 	background-color: #489dd6;
 	background-image: url("../images/backgrounds/welcome.jpg");
@@ -256,7 +258,7 @@ img {
 
 .welcome-text {
 	width: 660px;
-	margin: 63px auto 90px;
+	margin: 0 auto 90px;
 	text-align: center;
 }
 
@@ -264,7 +266,15 @@ img {
 	margin-bottom: 31px;
 }
 
+.welcome-text > .description {
+	margin: 0;
+}
+
 /* Reasons */
+
+.reasons {
+	margin-bottom: 90px;
+}
 
 .reason-list,
 .reason-sublist {
@@ -279,6 +289,7 @@ img {
 .reason-card,
 .main-reason-card {
 	width: 400px;
+	min-height: 384px;
 	padding: 92px 85px;
 	text-align: center;
 }
@@ -335,21 +346,21 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 0;
-	padding: 90px 300px 93px;
+	margin: 0 auto 93px;
+	padding: 0;
 	text-align: center;
 }
 
-.reservation > .title {
+.reservation .title {
 	margin-bottom: 29px;
 }
 
-.reservation > .description {
+.reservation .description {
 	margin: 0;
 	margin-bottom: 56px;
 }
 
-.reservation > .button {
+.reservation .button {
 	width: 574px;
 	margin: 0;
 	padding: 12px 15px;
@@ -366,13 +377,14 @@ img {
 	color: #ffffff;
 }
 
-.newsletter-background > .title {
-	color: #ffffff;
+.newsletter-background .title {
+	color: inherit;
 }
 
 /* Catalog Header */
 
 .header-filters {
+	margin-bottom: 55px;
 	padding: 35px 70px 70px;
 	background-color: #489dd6;
 	background-image: url("../images/backgrounds/filter.jpg");
@@ -403,7 +415,7 @@ img {
 
 .breadcrumbs-item {
 	text-decoration: none;
-	color: #ffffff;
+	color: inherit;
 }
 
 /* Filters */
@@ -480,6 +492,11 @@ img {
 
 /* Catalog */
 
+.catalog {
+	padding: 0 72px;
+	margin-bottom: 25px;
+}
+
 .select-input {
 	height: 49px;
 	padding: 13px 16px;
@@ -495,7 +512,7 @@ img {
 	display: flex;
 	align-items: center;
 	margin: 0;
-	padding: 55px 72px 56px;
+	margin-bottom: 56px;
 }
 
 .title-header-catalog {
@@ -537,7 +554,9 @@ img {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin: 0;
-	padding: 0 72px 66px;
+	padding: 0;
+	margin-bottom: 30px;
+	padding-bottom: 66px;
 	list-style: none;
 }
 
@@ -550,10 +569,12 @@ img {
 
 .hotel-image {
 	display: block;
+	margin-bottom: 16px;
 }
 
 .hotel-title {
-	margin: 16px 0;
+	margin: 0;
+	margin-bottom: 16px;
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 700;
@@ -577,7 +598,7 @@ img {
 	margin-bottom: 16px;
 }
 
-.hotel-description > .button {
+.hotel-description .button {
 	width: 140px;
 	margin-bottom: 16px;
 }
@@ -607,7 +628,6 @@ img {
 	justify-content: space-between;
 	align-items: center;
 	height: 60px;
-	margin: 30px 72px 25px;
 	padding: 0;
 }
 
@@ -624,6 +644,9 @@ img {
 	display: block;
 	width: 60px;
 	padding: 12px;
+	font-size: 20px;
+	line-height: 36px;
+	background-color: #82b3d3;
 }
 
 .pagination-item-current {
@@ -640,5 +663,4 @@ img {
 
 .catalog-num-items {
 	width: 160px;
-	height: 50px;
 }
