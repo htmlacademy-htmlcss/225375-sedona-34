@@ -127,6 +127,8 @@ img {
 }
 
 .logo {
+	position: relative;
+	display: block;
 	max-height: 66px;
 	z-index: 1;
 }
@@ -409,7 +411,6 @@ img {
 .breadcrumbs {
 	display: flex;
 	align-items: center;
-	column-gap: 10px;
 	margin: 0;
 	margin-bottom: 40px;
 	padding: 0;
@@ -420,6 +421,10 @@ img {
 .breadcrumbs-item {
 	text-decoration: none;
 	color: inherit;
+}
+
+.breadcrumbs-item:not(:last-child) {
+	margin-right: 10px;
 }
 
 /* Filters */
@@ -537,7 +542,6 @@ img {
 .buttons-group {
 	display: flex;
 	justify-content: space-between;
-	column-gap: 8px;
 	margin: 0;
 	margin-left: 78px;
 	padding: 0;
@@ -552,6 +556,10 @@ img {
 	color: #000000;
 	border: 2px solid #e5e5e5;
 	border-radius: 4px;
+}
+
+.button-icon:not(:last-child) {
+	margin-right: 8px;
 }
 
 .button-icon-selected {
@@ -629,7 +637,6 @@ img {
 .catalog-pagination {
 	display: flex;
 	justify-content: space-between;
-	column-gap: 8px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -642,6 +649,10 @@ img {
 	font-size: 20px;
 	line-height: 36px;
 	background-color: #82b3d3;
+}
+
+.pagination-item:not(:last-child) {
+	margin-right: 8px;
 }
 
 .pagination-item-current {
