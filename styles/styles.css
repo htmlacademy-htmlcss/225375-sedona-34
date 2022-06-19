@@ -284,6 +284,7 @@ img {
 /* Welcome */
 
 .welcome {
+	position: relative;
 	margin: 0;
 	margin-bottom: 63px;
 	padding: 50px 0 82px;
@@ -292,6 +293,17 @@ img {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	color: #ffffff;
+}
+
+.welcome::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 56px;
+	background-image: url("../images/divider.svg");
+	background-repeat: no-repeat;
+	content: "";
 }
 
 .image-welcome {
