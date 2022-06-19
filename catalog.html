@@ -52,7 +52,7 @@
 					<h2 class="visually-hidden">Фильтр для поиска гостиницы</h2>
 					<form class="form-catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
 						<!-- Инфрастуктура и тип жилья -->
-						<div class="filter-group">
+						<div class="filter-group-left">
 							<fieldset class="filter-fieldset">
 								<legend class="title-filter">Инфраструктура:</legend>
 								<ul class="filter-list">
@@ -74,8 +74,8 @@
 								<legend class="title-filter">Тип жилья:</legend>
 								<ul class="filter-list">
 									<li class="filter-item">
-										<input class="radio-input" type="radio" name="type-of-housing" id="hotel-radio" value="hotel" checked />
-										<label class="radio-label" for="hotel-radio">Отель</label>
+										<input class="radio-input" type="radio" name="type-of-housing" id="catalog-item-radio" value="catalog-item" checked />
+										<label class="radio-label" for="catalog-item-radio">Отель</label>
 									</li>
 									<li class="filter-item">
 										<input class="radio-input" type="radio" name="type-of-housing" id="motel-radio" value="motel" />
@@ -90,7 +90,7 @@
 						</div>
 
 						<!-- Стоимость и кнопки -->
-						<div class="filter-group">
+						<div class="filter-group-right">
 							<fieldset class="filter-fieldset filter-price">
 								<legend class="title-filter">Стоимость, ₽:</legend>
 								<label class="visually-hidden" for="price-from">Начальная цена</label>
@@ -143,78 +143,78 @@
 
 				<!-- Список гостиниц -->
 				<ul class="catalog-list">
-					<li class="hotel">
-						<a class="hotel-link" href="#">
-							<img class="hotel-image" src="images/hotels/amara.jpg" width="300" height="211" alt="Фотография гостиницы Amara Resort & Spa" />
-							<h3 class="hotel-title">Amara Resort & Spa</h3>
+					<li class="catalog-item">
+						<a class="catalog-item-link" href="#">
+							<img class="catalog-item-image" src="images/catalog-items/amara.jpg" width="300" height="211" alt="Фотография гостиницы Amara Resort & Spa" />
 						</a>
-						<div class="hotel-description">
-							<span class="hotel-text">Гостиница</span>
-							<span class="hotel-text">От 4000 ₽</span>
-							<a class="button" href="#">Подробнее</a>
-							<button class="button button-accent" type="button">В избранное</button>
-							<ul class="num-stars">
-								<li class="star"></li>
-								<li class="star"></li>
-								<li class="star"></li>
-								<li class="star"></li>
-							</ul>
-							<span class="hotel-rating">Рейтинг: 8,5</span>
-						</div>
+						<a class="catalog-item-link" href="#">
+							<h3 class="catalog-item-title">Amara Resort & Spa</h3>
+						</a>
+						<span class="catalog-item-text">Гостиница</span>
+						<span class="catalog-item-text">От 4000 ₽</span>
+						<a class="button" href="#">Подробнее</a>
+						<button class="button button-accent" type="button">В избранное</button>
+						<ul class="catalog-item-stars">
+							<li class="star"></li>
+							<li class="star"></li>
+							<li class="star"></li>
+							<li class="star"></li>
+						</ul>
+						<span class="catalog-item-rating">Рейтинг: 8,5</span>
 					</li>
-					<li class="hotel">
-						<a class="hotel-link" href="#">
-							<img class="hotel-image" src="images/hotels/villas.jpg" width="300" height="211" alt="Фотография гостиницы Villas at Poco Diablo" />
-							<h3 class="hotel-title">Villas at Poco Diablo</h3>
+					<li class="catalog-item">
+						<a class="catalog-item-link" href="#">
+							<img class="catalog-item-image" src="images/catalog-items/villas.jpg" width="300" height="211" alt="Фотография гостиницы Villas at Poco Diablo" />
 						</a>
-						<div class="hotel-description">
-							<span class="hotel-text">Гостиница</span>
-							<span class="hotel-text">От 5000 ₽</span>
-							<a class="button" href="#">Подробнее</a>
-							<button class="button button-selected" type="button">В избранном</button>
-							<ul class="num-stars">
-								<li class="star"></li>
-								<li class="star"></li>
-								<li class="star"></li>
-								<li class="star"></li>
-							</ul>
-							<span class="hotel-rating">Рейтинг: 9,2</span>
-						</div>
+						<a class="catalog-item-link" href="#">
+							<h3 class="catalog-item-title">Villas at Poco Diablo</h3>
+						</a>
+						<span class="catalog-item-text">Гостиница</span>
+						<span class="catalog-item-text">От 5000 ₽</span>
+						<a class="button" href="#">Подробнее</a>
+						<button class="button button-selected" type="button">В избранном</button>
+						<ul class="catalog-item-stars">
+							<li class="star"></li>
+							<li class="star"></li>
+							<li class="star"></li>
+							<li class="star"></li>
+						</ul>
+						<span class="catalog-item-rating">Рейтинг: 9,2</span>
 					</li>
-					<li class="hotel">
-						<a class="hotel-link" href="#">
-							<img class="hotel-image" src="images/hotels/desert.jpg" width="300" height="211" alt="Фотография гостиницы Desert Quail Inn" />
-							<h3 class="hotel-title">Desert Quail Inn</h3>
+					<li class="catalog-item">
+						<a class="catalog-item-link" href="#">
+							<img class="catalog-item-image" src="images/catalog-items/desert.jpg" width="300" height="211" alt="Фотография гостиницы Desert Quail Inn" />
 						</a>
-						<div class="hotel-description">
-							<span class="hotel-text">Гостиница</span>
-							<span class="hotel-text">От 2500 ₽</span>
-							<a class="button" href="#">Подробнее</a>
-							<button class="button button-accent" type="button">В избранное</button>
-							<ul class="num-stars">
-								<li class="star"></li>
-								<li class="star"></li>
-								<li class="star"></li>
-							</ul>
-							<span class="hotel-rating">Рейтинг: 6,9</span>
-						</div>
+						<a class="catalog-item-link" href="#">
+							<h3 class="catalog-item-title">Desert Quail Inn</h3>
+						</a>
+						<span class="catalog-item-text">Гостиница</span>
+						<span class="catalog-item-text">От 2500 ₽</span>
+						<a class="button" href="#">Подробнее</a>
+						<button class="button button-accent" type="button">В избранное</button>
+						<ul class="catalog-item-stars">
+							<li class="star"></li>
+							<li class="star"></li>
+							<li class="star"></li>
+						</ul>
+						<span class="catalog-item-rating">Рейтинг: 6,9</span>
 					</li>
-					<li class="hotel">
-						<a class="hotel-link" href="#">
-							<img class="hotel-image" src="images/hotels/greentree.jpg" width="300" height="211" alt="Фотография гостиницы GreenTree Inn" />
-							<h3 class="hotel-title">GreenTree Inn</h3>
+					<li class="catalog-item">
+						<a class="catalog-item-link" href="#">
+							<img class="catalog-item-image" src="images/catalog-items/greentree.jpg" width="300" height="211" alt="Фотография гостиницы GreenTree Inn" />
 						</a>
-						<div class="hotel-description">
-							<span class="hotel-text">Гостиница</span>
-							<span class="hotel-text">От 1500 ₽</span>
-							<a class="button" href="#">Подробнее</a>
-							<button class="button button-accent" type="button">В избранное</button>
-							<ul class="num-stars">
-								<li class="star"></li>
-								<li class="star"></li>
-							</ul>
-							<span class="hotel-rating">Рейтинг: 5,0</span>
-						</div>
+						<a class="catalog-item-link" href="#">
+							<h3 class="catalog-item-title">GreenTree Inn</h3>
+						</a>
+						<span class="catalog-item-text">Гостиница</span>
+						<span class="catalog-item-text">От 1500 ₽</span>
+						<a class="button" href="#">Подробнее</a>
+						<button class="button button-accent" type="button">В избранное</button>
+						<ul class="catalog-item-stars">
+							<li class="star"></li>
+							<li class="star"></li>
+						</ul>
+						<span class="catalog-item-rating">Рейтинг: 5,0</span>
 					</li>
 				</ul>
 
@@ -244,7 +244,7 @@
 					<!-- Кол-во объектов на странице -->
 					<label class="catalog-select">
 						<span>Гостиниц на странице:</span>
-						<select class="select-input catalog-num-items" name="catalog-num-items">
+						<select class="select-input qty-items" name="qty-items">
 							<option value="4" selected>4</option>
 							<option value="8">8</option>
 							<option value="12">12</option>
