@@ -84,6 +84,25 @@ img {
 	border-radius: 4px;
 }
 
+.button:hover {
+	background-color: #615048;
+}
+
+.button:focus {
+	outline: none;
+	background-color: #615048;
+}
+
+.button:active {
+	background-color: #756157;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+	background-color: #e5e5e5;
+	color: #ffffff;
+}
+
 .text-input,
 .select-input {
 	font: inherit;
@@ -113,8 +132,35 @@ img {
 	background-color: #82b3d3;
 }
 
+.button-accent:hover {
+	background-color: #68a2ca;
+}
+.button-accent:focus {
+	outline: none;
+	background-color: #68a2ca;
+}
+
+.button-accent:active {
+	background-color: #82b3d3;
+	color: rgba(255, 255, 255, 0.3);
+}
+
 .button-selected {
 	background-color: #7db54f;
+}
+
+.button-selected:hover {
+	background-color: #6c9e42;
+}
+
+.button-selected:focus {
+	outline: none;
+	background-color: #6c9e42;
+}
+
+.button-selected:active {
+	background-color: #7db54f;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 /* Navigation */
@@ -160,8 +206,8 @@ img {
 
 .navigation-item-current::before {
 	position: absolute;
-	top: 65px;
-	width: calc(100% - 34px);
+	bottom: -1px;
+	width: calc(100% - 17px * 2);
 	height: 2px;
 	content: "";
 	background-color: #756257;
@@ -272,16 +318,50 @@ img {
 	padding: 10px 13px;
 }
 
-.telephone {
+.social-item {
+	color: #83b3d3;
+}
+
+.social-item:hover {
+	color: #68a2ca;
+}
+
+.social-item:focus {
+	outline: none;
+	color: #68a2ca;
+}
+
+.social-item:active {
+	opacity: 0.3;
+}
+
+.tel-link {
 	font-size: 40px;
 	line-height: 48px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #000000;
 }
 
 .dev-link svg {
 	display: block;
+}
+
+.footer-link {
+	color: #000000;
+}
+
+.footer-link:hover {
+	color: #756157;
+}
+
+.footer-link:focus {
+	outline: none;
+	color: #756157;
+}
+
+.footer-link:active {
+	color: #756157;
+	opacity: 0.3;
 }
 
 /* Welcome */
@@ -373,7 +453,7 @@ img {
 .reasons-sublist .reason-card:nth-child(1)::before {
 	width: 75px;
 	height: 72px;
-	background-image: url("../images/house.svg");
+	background-image: url("../images/reasons/house.svg");
 	background-repeat: no-repeat;
 	content: "";
 }
@@ -381,7 +461,7 @@ img {
 .reasons-sublist .reason-card:nth-child(2)::before {
 	width: 74px;
 	height: 70px;
-	background-image: url("../images/food.svg");
+	background-image: url("../images/reasons/food.svg");
 	background-repeat: no-repeat;
 	content: "";
 }
@@ -389,7 +469,7 @@ img {
 .reasons-sublist .reason-card:nth-child(3)::before {
 	width: 64px;
 	height: 76px;
-	background-image: url("../images/souvenir.svg");
+	background-image: url("../images/reasons/souvenir.svg");
 	background-repeat: no-repeat;
 	content: "";
 }
@@ -503,12 +583,17 @@ img {
 	color: inherit;
 }
 
-.breadcrumbs-item-home {
-	display: block;
-	width: 12px;
-	height: 12px;
-	padding: 2px;
-	background-image: url("../images/icons/breadcrubs-home.svg");
+.breadcrumbs-item:hover {
+	opacity: 0.6;
+}
+
+.breadcrumbs-item:focus {
+	outline: none;
+	opacity: 1;
+}
+
+.breadcrumbs-item:active {
+	opacity: 0.6;
 }
 
 .breadcrumbs li:not(:last-child) {
@@ -521,7 +606,7 @@ img {
 
 .breadcrumbs li:not(:last-child)::after {
 	position: absolute;
-	top: 2px;
+	top: 6px;
 	right: -16px;
 	width: 5px;
 	height: 8px;
@@ -656,11 +741,27 @@ img {
 	display: flex;
 	align-items: center;
 	width: 48px;
-	height: 48px;
+	padding: 15px 14px;
 	color: #000000;
 	background-color: transparent;
 	border: 2px solid #e5e5e5;
 	border-radius: 4px;
+}
+
+.button-icon:hover {
+	background-color: transparent;
+	border: 2px solid #000000;
+}
+
+.button-icon:focus {
+	background-color: transparent;
+	border: 2px solid #68a2ca;
+}
+
+.button-icon:active {
+	background-color: transparent;
+	border: 2px solid #000000;
+	color: #000000;
 }
 
 .button-icon-selected {
@@ -691,10 +792,12 @@ img {
 
 .catalog-item-image {
 	display: block;
+	grid-column: 1 / -1;
 }
 
 .catalog-item-title {
 	margin: 0;
+	grid-column: 1 / -1;
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 700;
@@ -702,8 +805,9 @@ img {
 }
 
 .catalog-item-link {
+	display: contents;
 	text-decoration: none;
-	grid-column: 1 / -1;
+	pointer-events: fill;
 }
 
 .catalog-item .button {
@@ -758,7 +862,6 @@ img {
 	padding: 12px;
 	font-size: 20px;
 	line-height: 36px;
-	background-color: #82b3d3;
 }
 
 .catalog-pagination li:not(:last-child) {
@@ -768,6 +871,7 @@ img {
 .pagination-item-current {
 	color: #000000;
 	background-color: #f2f2f2;
+	pointer-events: none;
 }
 
 .catalog-select {
@@ -777,6 +881,6 @@ img {
 	width: 386px;
 }
 
-.qty-items {
+.quantity-items {
 	width: 160px;
 }
