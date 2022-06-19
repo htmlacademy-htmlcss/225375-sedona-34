@@ -127,6 +127,7 @@ img {
 .logo {
 	position: absolute;
 	display: block;
+	z-index: 1;
 }
 
 .navigation {
@@ -338,9 +339,12 @@ img {
 	list-style: none;
 }
 
-.reasons-list,
-.main-reason,
 .reasons-sublist {
+	display: contents;
+}
+
+.reasons-list,
+.main-reason {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column: 1 / -1;
@@ -358,14 +362,34 @@ img {
 	flex-direction: column;
 	gap: 30px;
 	justify-content: center;
-	grid-column: span 1;
+	align-items: center;
 	min-height: 384px;
 	padding: 80px 85px;
 	text-align: center;
 }
 
-.reasons-sublist .reason-card {
-	justify-content: end;
+.reasons-sublist .reason-card:nth-child(1)::before {
+	width: 75px;
+	height: 72px;
+	background-image: url("../images/house.svg");
+	background-repeat: no-repeat;
+	content: "";
+}
+
+.reasons-sublist .reason-card:nth-child(2)::before {
+	width: 74px;
+	height: 70px;
+	background-image: url("../images/food.svg");
+	background-repeat: no-repeat;
+	content: "";
+}
+
+.reasons-sublist .reason-card:nth-child(3)::before {
+	width: 64px;
+	height: 76px;
+	background-image: url("../images/souvenir.svg");
+	background-repeat: no-repeat;
+	content: "";
 }
 
 .reasons-list .title {
