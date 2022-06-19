@@ -120,20 +120,17 @@ img {
 /* Navigation */
 
 .header-navigation {
-	display: grid;
-	grid-template-columns: auto 1fr;
-	column-gap: 30px;
+	position: relative;
 	padding: 0 70px;
 }
 
 .logo {
-	position: relative;
+	position: absolute;
 	display: block;
-	max-height: 66px;
-	z-index: 1;
 }
 
 .navigation {
+	margin-left: 170px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -149,6 +146,7 @@ img {
 }
 
 .navigation-item {
+	position: relative;
 	display: block;
 	padding: 20px 17px;
 	font-weight: 700;
@@ -157,6 +155,50 @@ img {
 	text-transform: capitalize;
 	text-decoration: none;
 	color: #000000;
+}
+
+.navigation-item-current::before {
+	position: absolute;
+	top: 65px;
+	width: calc(100% - 34px);
+	height: 2px;
+	content: "";
+	background-color: #756257;
+}
+
+.navigation-search {
+	width: 42px;
+	height: 66px;
+	background-image: url("../images/icons/search.svg");
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	background-position: center;
+}
+
+.navigation-favorite {
+	width: 42px;
+	height: 66px;
+	margin-right: 20px;
+	background-image: url("../images/icons/favorite.svg");
+	background-repeat: no-repeat;
+	background-size: 18px 18px;
+	background-position: center;
+}
+
+.navigation-favorite::after {
+	position: absolute;
+	top: 15px;
+	left: 24px;
+	width: 20px;
+	height: 20px;
+	content: "12";
+	font-size: 10px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #ffffff;
+	text-align: center;
+	background-color: #7db54f;
+	border-radius: 50%;
 }
 
 /* Newsletter */
