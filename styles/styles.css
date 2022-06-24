@@ -690,16 +690,49 @@ body {
 	list-style: none;
 }
 
-.filter__item {
-	display: flex;
-	gap: 19px;
-}
-
 .filter__item + .filter__item {
 	margin-top: 15px;
 }
 
 .filter__label {
+	display: flex;
+	gap: 19px;
+}
+
+.filter__checkbox-view {
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	background-image: none;
+	border-radius: 4px;
+}
+
+.filter__checkbox:checked + .filter__checkbox-view {
+	background-image: url("../images/icons/check.svg");
+	background-position: 4px 5px;
+	background-repeat: no-repeat;
+}
+
+.filter__radio-view {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.filter__radio:checked + .filter__radio-view::after {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	content: "";
+	background-color: #3F5E72;
+	border-radius: 50%;
+}
+
+.filter__label-text {
 	font-size: 18px;
 	line-height: 21px;
 }
