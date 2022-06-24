@@ -891,7 +891,7 @@ body {
 }
 
 .catalog__select {
-	padding: 10px 14px;
+	padding: 10px 46px 10px 14px;
 	margin: 0;
 	font-family: inherit;
 	font-size: 18px;
@@ -900,6 +900,29 @@ body {
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
 	border-radius: 4px;
+	background-image: url("../images/icons/select-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: right 18px center;
+	appearance: none;
+}
+
+.catalog__select:hover {
+	border: 2px solid #68a2ca;
+}
+
+.catalog__select:focus {
+	border: 2px solid #68a2ca;
+	outline: none;
+}
+
+.catalog__select:active {
+	border-color: #3f5e72;
+}
+
+.catalog__select:disabled {
+	color: #000000;
+	border-color: #000000;
+	opacity: 0.3;
 }
 
 /* Catalog Items Header */
