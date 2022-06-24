@@ -723,7 +723,7 @@ body {
 
 .filter__checkbox:checked + .filter__checkbox-view {
 	background-image: url("../images/icons/check.svg");
-	background-position: 4px 5px;
+	background-position: 4px;
 	background-repeat: no-repeat;
 }
 
@@ -761,22 +761,65 @@ body {
 	grid-template-columns: repeat(2, 1fr);
 }
 
+.filter__price-wrapper {
+	position: relative;
+	margin-top: 5px;
+}
+
 .filter__price-input {
 	width: 145px;
 	height: 48px;
 	box-sizing: border-box;
 	margin: 0 0 20px;
-	padding: 0 19px;
+	padding: 0 42px 0 19px;
+	font-family: inherit;
+	font-size: 18px;
+	line-height: 21px;
 	background-color: transparent;
 	border: 2px solid #ffffff;
 	border-radius: 4px 0 0 4px;
 	color: #ffffff;
 }
 
-.filter__price-input:last-of-type {
+.filter__price-input:hover {
+	border-color: rgba(255, 255, 255, 0.6);
+}
+
+.filter__price-input:focus {
+	border: 2px solid #FFFFFF;
+	box-shadow: 0 0 0 3px #81B3D2;
+	outline: none;
+}
+
+.filter__price-input:active {
+	background-color: #756257;
+	box-shadow: none;
+}
+
+.filter__price-placeholder {
+	position: absolute;
+	top: 10px;
+	right: 14px;
+	width: 17px;
+	height: 23px;
+	content: "от";
+	font-size: 18px;
+	line-height: 23px;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.filter__price-input--last {
 	border-left: 0;
 	border-radius: 0 4px 4px 0;
 }
+
+
+.filter__price-input::-webkit-outer-spin-button,
+.filter__price-input::-webkit-inner-spin-button {
+	appearance: none;
+	margin: 0;
+}
+
 
 .filter__range {
 	grid-column: 1 / -1;
@@ -848,7 +891,7 @@ body {
 }
 
 .catalog__select {
-	padding: 13px 16px;
+	padding: 10px 14px;
 	margin: 0;
 	font-family: inherit;
 	font-size: 18px;

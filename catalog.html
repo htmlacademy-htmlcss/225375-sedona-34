@@ -102,10 +102,16 @@
 							<div class="filter__group">
 								<fieldset class="fieldset filter__price">
 									<legend class="fieldset__title">Стоимость, ₽:</legend>
-									<input class="filter__price-input" type="number" name="price-from" placeholder="от" value="0" aria-label="Начальная цена">
-									<input class="filter__price-input" type="number" name="price-to" placeholder="до" value="9000" aria-label="Конечная цена">
+									<div class="filter__price-wrapper">
+										<input class="filter__price-input" type="number" name="price-from" value="0" aria-label="Начальная цена">
+										<span class="filter__price-placeholder">от</span>
+									</div>
+									<div class="filter__price-wrapper">
+										<input class="filter__price-input filter__price-input--last" type="number" name="price-to" value="9000" aria-label="Конечная цена">
+										<span class="filter__price-placeholder">до</span>
+									</div>
 									<div class="filter__range">
-										<div class="filter__range-bar" style="left: 0; width: 227px">
+										<div class="filter__range-bar" style="left: 0; width: 240px">
 											<button class="filter__range-toggle filter__range-toggle--min" type="button" aria-label="Установка начальной цены"></button>
 											<button class="filter__range-toggle filter__range-toggle--max" type="button" aria-label="Установка конечной цены"></button>
 										</div>
