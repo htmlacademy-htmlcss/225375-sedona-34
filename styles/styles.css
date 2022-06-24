@@ -707,6 +707,20 @@ body {
 	border-radius: 4px;
 }
 
+.filter__checkbox-view:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.filter__checkbox:focus + .filter__checkbox-view {
+	background: rgba(255, 255, 255, 0.6);
+	border: 3px solid #83b3d3;
+	margin: -3px -3px;
+}
+
+.filter__checkbox:active + .filter__checkbox-view {
+	background: rgba(255, 255, 255, 0.3);
+}
+
 .filter__checkbox:checked + .filter__checkbox-view {
 	background-image: url("../images/icons/check.svg");
 	background-position: 4px 5px;
@@ -730,6 +744,11 @@ body {
 	content: "";
 	background-color: #3F5E72;
 	border-radius: 50%;
+}
+
+.filter__radio:focus + .filter__radio-view {
+	border: 3px solid #83b3d3;
+	margin: -3px -3px;
 }
 
 .filter__label-text {
