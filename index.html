@@ -133,24 +133,30 @@
 				</a>
 			</footer>
 		</div>
-		<div class="modal modal--closed">
+		<div class="modal">
 			<div class="modal__window">
-				<button class="modal__close-button" aria-label="Закрыть"></button>
+				<button class="modal__close-button" aria-label="Закрыть" type="button"></button>
 				<section class="modal__content">
 					<h2 class="modal__title title">Поиск гостиницы в Седоне</h2>
-					<form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-						<label class="modal__label" for="entry-date">Дата заезда:</label>
-						<input class="modal__input" id="entry-date" type="text" value="27 апреля 2020">
-						<span class="modal__input-info modal__input-info--danger">Мы не можем отправить вас в прошлое.</span>
-						<label class="modal__label" for="departure-date">Дата выезда:</label>
-						<input class="modal__input" id="departure-date" type="text" value="1 сентября 2021">
-						<span class="modal__input-info">На эти даты есть свободные номера. Пока есть.</span>
-						<label class="modal__label" for="adults-num">Взрослые:</label>
-						<input class="modal__input modal__input-number" id="adults-num" type="number" value="2">
-						<span class="modal__empty"></span>
-						<label class="modal__label modal__label--info" for="children-num">Дети:</label>
-						<input class="modal__input modal__input-number" id="children-num" type="number" value="1">
-						<button class="modal__button button button--secondary">Найти</button>
+					<form  class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+						<label class="modal__label">
+							<span class="modal__label-text">Дата заезда:</span>
+							<input class="modal__input modal__input-text" type="text" name="date-in" value="27 апреля 2020">
+							<span class="modal__label-info modal__label-info--danger">Мы не можем отправить вас в прошлое.</span>
+						</label><label class="modal__label">
+							<span class="modal__label-text">Дата выезда:</span>
+							<input class="modal__input modal__input-text" type="text" name="date-out" value="1 сентября 2021">
+							<span class="modal__label-info">На эти даты есть свободные номера. Пока есть.</span>
+						</label>
+						<label class="modal__label modal__label--small">
+							<span class="modal__label-text">Взрослые:</span>
+							<input class="modal__input modal__input-num" type="number" name="person-num" value="2">
+						</label>
+						<label class="modal__label modal__label--small">
+							<span class="modal__label-text modal__label-text--icon">Дети:</span>
+							<input class="modal__input modal__input-num" type="number" name="child-num" value="1">
+						</label>
+						<button class="modal__button button button--secondary" type="submit">Найти</button>
 					</form>
 				</section>
 			</div>

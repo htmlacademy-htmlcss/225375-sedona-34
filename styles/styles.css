@@ -375,7 +375,7 @@ body {
 
 .modal__close-button {
 	position: absolute;
-	top: 54px;
+	top: 55px;
 	right: 70px;
 	width: 53px;
 	height: 53px;
@@ -398,27 +398,46 @@ body {
 }
 
 .modal__title {
+	margin: 2px 0 63px -2px;
+	margin-top: 2px;
 	margin-bottom: 63px;
 }
 
 .modal__form {
-	display: grid;
-	grid-template-columns: 155px 133px 56px 97px 133px;
-	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 54px;
+	width: 574px;
 }
 
 .modal__label {
+	display: grid;
+	grid-template-columns: 1fr 420px;
+	flex-grow: 1;
+	align-items: center;
+}
+
+.modal__label--small {
+	grid-template-columns: 155px 133px;
+}
+
+.modal__label--small + .modal__label--small {
+	grid-template-columns: 97px 133px;
+}
+
+.modal__label-text {
 	position: relative;
+	margin-right: 15px;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 26px;
 	text-transform: capitalize;
 }
 
-.modal__label--info::after {
+.modal__label-text--icon::after {
 	position: absolute;
-	top: 0;
-	left: 54px;
+	top: 2px;
+	left: 55px;
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
@@ -429,40 +448,43 @@ body {
 	content: "";
 }
 
-.modal__input {
-	display: block;
-	grid-column: 2 / -1;
-	width: 100%;
-	box-sizing: border-box;
-	padding: 15px 60px 14px 19px;
-	font-family: inherit;
-	font-size: 18px;
-	line-height: 21px;
-	background-color: #f2f2f2;
-	border: none;
-	border-radius: 4px;
-}
-
-.modal__input-number {
-	grid-column: span 1;
-	padding-left: 60px;
-}
-
-.modal__input-number::-webkit-outer-spin-button,
-.modal__input-number::-webkit-inner-spin-button {
-	appearance: none;
-	margin: 0;
-}
-
-.modal__input-info {
+.modal__label-info {
 	grid-column: 2 / -1;
 	font-size: 16px;
 	line-height: 21px;
-	padding: 8px 0 10px;
+	padding: 8px 0 11px;
 }
 
-.modal__input-info--danger {
+.modal__label-info--danger {
 	color: #ff5757;
+}
+
+.modal__input {
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	background: #f2f2f2;
+	border-radius: 4px;
+	font: inherit;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.modal__input-text {
+	padding: 15px 50px 14px 19px;
+}
+
+.modal__input-num {
+	padding: 15px 19px 14px;
+	text-align: center;
+	width: 133px;
+}
+
+.modal__input-num::-webkit-outer-spin-button,
+.modal__input-num::-webkit-inner-spin-button {
+	appearance: none;
+	margin: 0;
 }
 
 .modal__button {
@@ -490,14 +512,23 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	color: #ffffff;
-	clip-path: polygon(0% 0%, 0% 88%, 21% 93%, 21% 88%, 50% 100%, 79% 88%, 79% 93%, 100% 88%, 100% 0%);
+	clip-path: polygon(
+		0% 0%,
+		0% 88%,
+		21% 93%,
+		21% 88%,
+		50% 100%,
+		79% 88%,
+		79% 93%,
+		100% 88%,
+		100% 0%
+	);
 }
 
 .hero__image {
 	display: block;
 	margin: 0 auto;
 }
-
 
 /* Advantages */
 
@@ -515,7 +546,6 @@ body {
 .advantages__intro-description {
 	margin: 0;
 }
-
 
 .advantages__list {
 	display: grid;
@@ -746,7 +776,7 @@ body {
 .catalog__header-link:focus {
 	opacity: 1;
 	background-color: transparent;
-	outline: 3px solid #83B3D3;
+	outline: 3px solid #83b3d3;
 }
 
 .catalog__header-link:active {
@@ -870,7 +900,7 @@ body {
 	width: 10px;
 	height: 10px;
 	content: "";
-	background-color: #3F5E72;
+	background-color: #3f5e72;
 	border-radius: 50%;
 }
 
@@ -914,8 +944,8 @@ body {
 }
 
 .filter__price-input:focus {
-	border: 2px solid #FFFFFF;
-	box-shadow: 0 0 0 3px #81B3D2;
+	border: 2px solid #ffffff;
+	box-shadow: 0 0 0 3px #81b3d2;
 	outline: none;
 }
 
@@ -941,13 +971,11 @@ body {
 	border-radius: 0 4px 4px 0;
 }
 
-
 .filter__price-input::-webkit-outer-spin-button,
 .filter__price-input::-webkit-inner-spin-button {
 	appearance: none;
 	margin: 0;
 }
-
 
 .filter__range {
 	grid-column: 1 / -1;
@@ -977,13 +1005,13 @@ body {
 }
 
 .filter__range-toggle:focus {
-	border: 3px solid #83B3D3;
+	border: 3px solid #83b3d3;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 	outline: none;
 }
 
 .filter__range-toggle:active {
-	border: 2px solid #83B3D3;
+	border: 2px solid #83b3d3;
 	box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 	outline: none;
 }
@@ -1091,7 +1119,7 @@ body {
 	padding: 0;
 	margin-bottom: 30px;
 	padding-bottom: 66px;
-	border-bottom: 1px solid #E6E6E6;
+	border-bottom: 1px solid #e6e6e6;
 	list-style: none;
 }
 
@@ -1184,7 +1212,6 @@ body {
 	padding: 12px;
 	font-size: 20px;
 	line-height: 36px;
-
 }
 
 .pagination-item-current {
