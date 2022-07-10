@@ -10,7 +10,7 @@
 
 	<body>
 		<div class="wrapper">
-			<header class="header container">
+			<header class="header">
 				<a class="logo">
 					<img src="images/logo.svg" width="140" height="70" alt="Логотип.">
 				</a>
@@ -23,7 +23,7 @@
 					<ul class="navigation__list">
 						<li><a class="navigation__link navigation__icon navigation__icon--search" aria-label="Поиск" href="#"></a></li>
 						<li><a class="navigation__link navigation__icon navigation__icon--favorite" aria-label="Избранное" href="#"></a></li>
-						<li><a class="button" href="#">Хочу сюда!</a></li>
+						<li><a class="button" href="#" onclick="openModal();">Хочу сюда!</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -48,15 +48,15 @@
 							<ul class="advantages__sublist">
 								<li class="advantages__card advantages__card--house advantages__card--lighter">
 									<p class="advantages__title">Жильё</p>
-									<p class="advantages__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+									<p class="advantages__description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
 								</li>
 								<li class="advantages__card advantages__card--food">
 									<p class="advantages__title">Еда</p>
-									<p class="advantages__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+									<p class="advantages__description">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
 								</li>
 								<li class="advantages__card advantages__card--souvenir advantages__card--lighter">
 									<p class="advantages__title">Сувениры</p>
-									<p class="advantages__description">Не только китайского, но и настоящего местного производства!</p>
+									<p class="advantages__description">Не только китайского,<br>но и настоящего местного производства!</p>
 								</li>
 							</ul>
 						</li>
@@ -84,8 +84,8 @@
 				<section class="search">
 					<h2 class="visually-hidden">Поиск гостиницы</h2>
 					<p class="search__title title">Заинтересовались?</p>
-					<p class="search__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-					<a class="search__button button" href="#">Поиск гостиницы в седоне</a>
+					<p class="search__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне   </p>
+					<a class="search__button button" href="#" onclick="openModal();">Поиск гостиницы в седоне</a>
 				</section>
 				<section class="newsletter newsletter--background">
 					<h2 class="newsletter__title title">Подпишитесь на рассылку</h2>
@@ -96,7 +96,7 @@
 					</form>
 				</section>
 			</main>
-			<footer class="contacts container">
+			<footer class="contacts">
 				<h2 class="visually-hidden">Контакты</h2>
 				<ul class="social">
 					<li class="social__item">
@@ -117,7 +117,7 @@
 					</li>
 					<li class="social__item">
 						<a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="YouTube.">
-							<svg aria-hidden="true" width="23" height="18" viewBox="0 0 23 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<svg aria-hidden="true" width="24" height="18" viewBox="0 0 24 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 								<path
 											d="M19.1072 0.5H3.67437C1.81368 0.5 0.500244 2.09375 0.500244 3.9V13.9937C0.500244 15.9062 1.81368 17.5 3.67437 17.5H19.3261C20.9679 17.5 22.5002 15.9062 22.5002 14.1V3.9C22.2813 2.09375 20.9679 0.5 19.1072 0.5ZM8.16194 13.0375V4.9625L15.4953 9L8.16194 13.0375Z" />
 							</svg>
@@ -133,34 +133,70 @@
 				</a>
 			</footer>
 		</div>
-		<div class="modal">
+		<div class="modal modal--closed">
 			<div class="modal__window">
-				<button class="modal__close-button" aria-label="Закрыть" type="button"></button>
+				<button class="modal__close-button" aria-label="Закрыть" type="button" onclick="closeModal();"></button>
 				<section class="modal__content">
 					<h2 class="modal__title title">Поиск гостиницы в Седоне</h2>
 					<form  class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-						<label class="modal__label">
-							<span class="modal__label-text">Дата заезда:</span>
-							<input class="modal__input modal__input-text" type="text" name="date-in" value="27 апреля 2020">
+						<div class="modal__label">
+							<label class="modal__label-text" for="date-in">Дата заезда:</label>
+							<span class="modal__input-text-wrapper">
+								<input class="modal__input modal__input-text" type="text" name="date-in" id="date-in" value="27 апреля 2020">
+								<button class="modal__input-text-icon" aria-label="Выбрать дату." type="button"></button>
+							</span>
 							<span class="modal__label-info modal__label-info--danger">Мы не можем отправить вас в прошлое.</span>
-						</label><label class="modal__label">
-							<span class="modal__label-text">Дата выезда:</span>
-							<input class="modal__input modal__input-text" type="text" name="date-out" value="1 сентября 2021">
+						</div>
+						<div class="modal__label">
+							<label class="modal__label-text" for="date-out">Дата выезда:</label>
+							<span class="modal__input-text-wrapper">
+								<input class="modal__input modal__input-text" type="text" name="date-out" id="date-out" value="1 сентября 2021">
+								<button class="modal__input-text-icon" aria-label="Выбрать дату." type="button"></button>
+							</span>
 							<span class="modal__label-info">На эти даты есть свободные номера. Пока есть.</span>
-						</label>
-						<label class="modal__label modal__label--small">
-							<span class="modal__label-text">Взрослые:</span>
-							<input class="modal__input modal__input-num" type="number" name="person-num" value="2">
-						</label>
-						<label class="modal__label modal__label--small">
-							<span class="modal__label-text modal__label-text--icon">Дети:</span>
-							<input class="modal__input modal__input-num" type="number" name="child-num" value="1">
-						</label>
+						</div>
+						<div class="modal__label modal__label--small">
+							<label class="modal__label-text" for="person-num-input">Взрослые:</label>
+							<span class="modal__input-num-wrapper">
+								<button class="modal__input-num-minus" aria-label="Уменьншить количество." type="button"></button>
+								<input class="modal__input modal__input-num" type="number" id="person-num-input" name="person-num" value="2">
+								<button class="modal__input-num-plus" aria-label="Увеличить количество." type="button"></button>
+							</span>
+						</div>
+						<div class="modal__label modal__label--small">
+							<span class="modal__label-text">
+								<label for="child-num-input">Дети:</label>
+								<span class="tooltip">
+									<button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label">
+										<svg width="1" height="9" viewBox="0 0 1 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+										</svg>
+									</button>
+									<span class="tooltip__text" role="tooltip" id="tooltip-label">
+										Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+									</span>
+								</span>
+							</span>
+							<span class="modal__input-num-wrapper">
+								<button class="modal__input-num-minus" aria-label="Уменьншить количество." type="button"></button>
+								<input class="modal__input modal__input-num" type="number" name="child-num" value="1" id="child-num-input">
+								<button class="modal__input-num-plus" aria-label="Увеличить количество." type="button"></button>
+							</span>
+						</div>
 						<button class="modal__button button button--secondary" type="submit">Найти</button>
 					</form>
 				</section>
 			</div>
 		</div>
+		<script>
+			let modal = document.getElementsByClassName("modal")[0];
+			function openModal() {
+				modal.classList.remove("modal--closed");
+			}
+			function closeModal() {
+				modal.classList.add("modal--closed");
+			}
+		</script>
 	</body>
 
 </html>
