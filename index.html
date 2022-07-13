@@ -10,7 +10,7 @@
 
 	<body>
 		<div class="wrapper">
-			<header class="header container">
+			<header class="header">
 				<a class="logo">
 					<img src="images/logo.svg" width="140" height="70" alt="Логотип.">
 				</a>
@@ -23,7 +23,7 @@
 					<ul class="navigation__list">
 						<li><a class="navigation__link navigation__icon navigation__icon--search" aria-label="Поиск" href="#"></a></li>
 						<li><a class="navigation__link navigation__icon navigation__icon--favorite" aria-label="Избранное" href="#"></a></li>
-						<li><a class="button" href="#">Хочу сюда!</a></li>
+						<li><a class="button" href="#" onclick="openModal();">Хочу сюда!</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -48,15 +48,15 @@
 							<ul class="advantages__sublist">
 								<li class="advantages__card advantages__card--house advantages__card--lighter">
 									<p class="advantages__title">Жильё</p>
-									<p class="advantages__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+									<p class="advantages__description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
 								</li>
 								<li class="advantages__card advantages__card--food">
 									<p class="advantages__title">Еда</p>
-									<p class="advantages__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+									<p class="advantages__description">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
 								</li>
 								<li class="advantages__card advantages__card--souvenir advantages__card--lighter">
 									<p class="advantages__title">Сувениры</p>
-									<p class="advantages__description">Не только китайского, но и настоящего местного производства!</p>
+									<p class="advantages__description">Не только китайского,<br>но и настоящего местного производства!</p>
 								</li>
 							</ul>
 						</li>
@@ -84,8 +84,8 @@
 				<section class="search">
 					<h2 class="visually-hidden">Поиск гостиницы</h2>
 					<p class="search__title title">Заинтересовались?</p>
-					<p class="search__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-					<a class="search__button button" href="#">Поиск гостиницы в седоне</a>
+					<p class="search__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне   </p>
+					<a class="search__button button" href="#" onclick="openModal();">Поиск гостиницы в седоне</a>
 				</section>
 				<section class="newsletter newsletter--background">
 					<h2 class="newsletter__title title">Подпишитесь на рассылку</h2>
@@ -96,14 +96,14 @@
 					</form>
 				</section>
 			</main>
-			<footer class="contacts container">
+			<footer class="contacts">
 				<h2 class="visually-hidden">Контакты</h2>
 				<ul class="social">
 					<li class="social__item">
 						<a class="social__link" href="https://vk.com/htmlacademy" aria-label="Вконтакте.">
 							<svg aria-hidden="true" width="25" height="14" viewBox="0 0 25 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd"
-											d="M23.9498 0.948C24.1158 0.402 23.9498 0 23.1548 0H20.5298C19.8618 0 19.5538 0.347 19.3868 0.73C19.3868 0.73 18.0518 3.926 16.1608 6.002C15.5488 6.604 15.2708 6.795 14.9368 6.795C14.7698 6.795 14.5188 6.604 14.5188 6.057V0.948C14.5188 0.292 14.3348 0 13.7788 0H9.65076C9.23376 0 8.98276 0.304 8.98276 0.593C8.98276 1.214 9.92876 1.358 10.0258 3.106V6.904C10.0258 7.737 9.87276 7.888 9.53876 7.888C8.64876 7.888 6.48376 4.677 5.19876 1.003C4.94976 0.288 4.69776 0 4.02676 0H1.39976C0.649756 0 0.499756 0.347 0.499756 0.73C0.499756 1.412 1.38976 4.8 4.64476 9.281C6.81476 12.341 9.86976 14 12.6528 14C14.3218 14 14.5278 13.632 14.5278 12.997V10.684C14.5278 9.947 14.6858 9.8 15.2148 9.8C15.6048 9.8 16.2718 9.992 17.8298 11.467C19.6098 13.216 19.9028 14 20.9048 14H23.5298C24.2798 14 24.6558 13.632 24.4398 12.904C24.2018 12.18 23.3518 11.129 22.2248 9.882C21.6128 9.172 20.6948 8.407 20.4158 8.024C20.0268 7.533 20.1378 7.314 20.4158 6.877C20.4158 6.877 23.6158 2.451 23.9488 0.948H23.9498Z">
+											d="M23.9498 0.948C24.1158 0.402 23.9498 0 23.1548 0H20.5298C19.8618 0 19.5538 0.347 19.3868 0.73C19.3868 0.73 18.0518 3.926 16.1608 6.002C15.5488 6.604 15.2708 6.795 14.9368 6.795C14.7698 6.795 14.5188 6.604 14.5188 6.057V0.948C14.5188 0.292 14.3348 0 13.7788 0H9.65076C9.23376 0 8.98276 0.304 8.98276 0.593C8.98276 1.214 9.92876 1.358 10.0258 3.106V6.904C10.0258 7.737 9.87276 7.888 9.53876 7.888C8.64876 7.888 6.48376 4.677 5.19876 1.003C4.94976 0.288 4.69776 0 4.02676 0H1.39976C0.649756 0 0.499756 0.347 0.499756 0.73C0.499756 1.412 1.38976 4.8 4.64476 9.281C6.81476 12.341 9.86976 14 12.6528 14C14.3218 14 14.5278 13.632 14.5278 12.997V10.684C14.5278 9.947 14.6858 9.8 15.2148 9.8C15.6048 9.8 16.2718 9.992 17.8298 11.467C19.6098 13.216 19.9028 14 20.9048 14H23.5298C24.2798 14 24.6558 13.632 24.4398 12.904C24.2018 12.18 23.3518 11.129 22.2248 9.882C21.6128 9.172 20.6948 8.407 20.4158 8.024C20.0268 7.533 20.1378 7.314 20.4158 6.877C20.4158 6.877 23.6158 2.451 23.9488 0.948H23.9498Z" />
 							</svg>
 						</a>
 					</li>
@@ -111,15 +111,15 @@
 						<a class="social__link" href="https://t.me/htmlacademy" aria-label="Телеграм.">
 							<svg aria-hidden="true" width="19" height="16" viewBox="0 0 19 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 								<path
-											d="M17.2853 0.0992597L1.34073 6.24776C0.252584 6.68481 0.258879 7.29184 1.14109 7.56253L5.23469 8.83953L14.7061 2.8637C15.1539 2.59121 15.5631 2.7378 15.2268 3.03636L7.55308 9.96185H7.55128L7.55308 9.96275L7.2707 14.1823C7.68438 14.1823 7.86693 13.9925 8.09895 13.7686L10.0873 11.8351L14.2232 14.89C14.9858 15.31 15.5334 15.0941 15.7232 14.1841L18.4382 1.38885C18.7161 0.274623 18.0128 -0.229883 17.2853 0.0992597Z">
+											d="M17.2853 0.0992597L1.34073 6.24776C0.252584 6.68481 0.258879 7.29184 1.14109 7.56253L5.23469 8.83953L14.7061 2.8637C15.1539 2.59121 15.5631 2.7378 15.2268 3.03636L7.55308 9.96185H7.55128L7.55308 9.96275L7.2707 14.1823C7.68438 14.1823 7.86693 13.9925 8.09895 13.7686L10.0873 11.8351L14.2232 14.89C14.9858 15.31 15.5334 15.0941 15.7232 14.1841L18.4382 1.38885C18.7161 0.274623 18.0128 -0.229883 17.2853 0.0992597Z" />
 							</svg>
 						</a>
 					</li>
 					<li class="social__item">
 						<a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="YouTube.">
-							<svg aria-hidden="true" width="23" height="18" viewBox="0 0 23 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<svg aria-hidden="true" width="24" height="18" viewBox="0 0 24 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 								<path
-											d="M19.1072 0.5H3.67437C1.81368 0.5 0.500244 2.09375 0.500244 3.9V13.9937C0.500244 15.9062 1.81368 17.5 3.67437 17.5H19.3261C20.9679 17.5 22.5002 15.9062 22.5002 14.1V3.9C22.2813 2.09375 20.9679 0.5 19.1072 0.5ZM8.16194 13.0375V4.9625L15.4953 9L8.16194 13.0375Z">
+											d="M19.1072 0.5H3.67437C1.81368 0.5 0.500244 2.09375 0.500244 3.9V13.9937C0.500244 15.9062 1.81368 17.5 3.67437 17.5H19.3261C20.9679 17.5 22.5002 15.9062 22.5002 14.1V3.9C22.2813 2.09375 20.9679 0.5 19.1072 0.5ZM8.16194 13.0375V4.9625L15.4953 9L8.16194 13.0375Z" />
 							</svg>
 						</a>
 					</li>
@@ -133,6 +133,70 @@
 				</a>
 			</footer>
 		</div>
+		<div class="modal modal--closed">
+			<div class="modal__window">
+				<button class="modal__close-button" aria-label="Закрыть" type="button" onclick="closeModal();"></button>
+				<section class="modal__content">
+					<h2 class="modal__title title">Поиск гостиницы в Седоне</h2>
+					<form  class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+						<div class="modal__label">
+							<label class="modal__label-text" for="date-in">Дата заезда:</label>
+							<span class="modal__input-text-wrapper">
+								<input class="modal__input modal__input-text" type="text" name="date-in" id="date-in" value="27 апреля 2020" placeholder="Укажите дату">
+								<button class="modal__input-text-icon" aria-label="Выбрать дату." type="button"></button>
+							</span>
+							<span class="modal__label-info modal__label-info--danger">Мы не можем отправить вас в прошлое.</span>
+						</div>
+						<div class="modal__label">
+							<label class="modal__label-text" for="date-out">Дата выезда:</label>
+							<span class="modal__input-text-wrapper">
+								<input class="modal__input modal__input-text" type="text" name="date-out" id="date-out" value="1 сентября 2021" placeholder="Укажите дату">
+								<button class="modal__input-text-icon" aria-label="Выбрать дату." type="button"></button>
+							</span>
+							<span class="modal__label-info">На эти даты есть свободные номера. Пока есть.</span>
+						</div>
+						<div class="modal__label modal__label--small">
+							<label class="modal__label-text" for="person-num-input">Взрослые:</label>
+							<span class="modal__input-num-wrapper">
+								<button class="modal__input-num-minus" aria-label="Уменьншить количество." type="button"></button>
+								<input class="modal__input modal__input-num" type="number" id="person-num-input" name="person-num" value="2">
+								<button class="modal__input-num-plus" aria-label="Увеличить количество." type="button"></button>
+							</span>
+						</div>
+						<div class="modal__label modal__label--small">
+							<span class="modal__label-text">
+								<label for="child-num-input">Дети:</label>
+								<span class="tooltip">
+									<button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label">
+										<svg width="1" height="9" viewBox="0 0 1 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+										</svg>
+									</button>
+									<span class="tooltip__text" role="tooltip" id="tooltip-label">
+										Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+									</span>
+								</span>
+							</span>
+							<span class="modal__input-num-wrapper">
+								<button class="modal__input-num-minus" aria-label="Уменьншить количество." type="button"></button>
+								<input class="modal__input modal__input-num" type="number" id="child-num-input" name="child-num" value="1">
+								<button class="modal__input-num-plus" aria-label="Увеличить количество." type="button"></button>
+							</span>
+						</div>
+						<button class="modal__button button button--secondary" type="submit">Найти</button>
+					</form>
+				</section>
+			</div>
+		</div>
+		<script>
+			let modal = document.getElementsByClassName("modal")[0];
+			function openModal() {
+				modal.classList.remove("modal--closed");
+			}
+			function closeModal() {
+				modal.classList.add("modal--closed");
+			}
+		</script>
 	</body>
 
 </html>
